@@ -1,0 +1,27 @@
+- device_type: cisco_ios
+  host: 192.168.1.1
+  username: controller
+  password: controller123@
+  secret: controller123@
+  port: 22
+
+- device_type: cisco_ios
+  host: 192.168.1.2
+  username: controller
+  password: controller123@
+  secret: controller123@
+  port: 22
+
+- device_type: cisco_ios
+  host: 192.168.1.3
+  username: controller
+  password: controller123@
+  secret: controller123@
+  port: 22
+
+- device_type: cisco_ios
+  host: 192.168.1.4
+  username: controller
+  password: controller123@
+  secret: controller123@
+  port: 22
