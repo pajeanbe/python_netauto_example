@@ -10,7 +10,12 @@ def load_yaml_file(path):
     except Exception as e:
         return {}
 
-
+def load_hc_script(path):
+    try:
+        with open(path, 'r') as file:
+            return file.read()
+    except Exception as e:
+        return ""
 
 def main():
     try:
@@ -20,8 +25,7 @@ def main():
         else:
             for host in hosts:
                 net_connect = ConnectHandler(**host)
-                output = net_connect.send_command(['show ip int brief',
-                                                  "show ip int stats",])
+                output = net_connect.send_command('show ip int brief')
                 print(output)
     except Exception as e:
         print(e)
