@@ -20,7 +20,8 @@ def main():
         else:
             for host in hosts:
                 net_connect = ConnectHandler(**host)
-                output = net_connect.send_command('show ip int brief')
+                output = net_connect.send_command(['show ip int brief',
+                                                  "show ip int stats",])
                 print(output)
     except Exception as e:
         print(e)
